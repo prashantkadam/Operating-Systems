@@ -1,0 +1,28 @@
+*************** Assignment 3 *******************
+
+********************************************************************
+Group members:
+********************************************************************
+
+Prashant Kadam - pkadam1@binghamton.edu
+Rishi Sanas    - rsanas1@binghamton.edu
+
+********************************************************************
+
+Files Attached
+1> mypipe.c
+2> p.c
+3> c.c
+4> Makefile
+5> dmesg_output
+
+How to compile ?
+	make -> to compile and insert module
+	make compile -> compile user level programs
+How To run ?
+
+	./p <No of Producer>
+
+	./c <No of Consumer>
+
+

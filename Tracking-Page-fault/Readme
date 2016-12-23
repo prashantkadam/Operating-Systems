@@ -1,0 +1,31 @@
+*************** Assignment 4 *******************
+
+********************************************************************
+Group members:
+********************************************************************
+
+Prashant Kadam - pkadam1@binghamton.edu
+
+********************************************************************
+
+Files Attached
+1: mypipe.c     => kernel module
+2: c.c			=> program to get data into file for plotting graph
+3: info.h  		=> IOCTL request number sruct
+4: Makefile		=> makefile
+5: page_fault	=> execulatble to gererate pagefault
+6: project1     => executable for quicksort program
+7: plot_.pdf    => include graphs 
+
+
+How to Run ->
+# just do make
+make
+#insert kernel module with PID as module parameter
+sudo insmod mypipe.ko pid_to_track=  <<<pid_module_parameter>>>
+# give permission 
+sudo chmod 0606 /dev/mypipe
+
+
+ ## tested sysbench command 
+ sysbench --test=cpu --cpu-max-prime=40000 run
